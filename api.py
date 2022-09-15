@@ -39,5 +39,5 @@ for text, coordinates in data:
 
 dict_data = dict(zip(text_array, coordinates_array))
     
-with open(str(args.values()).split("/")[-1].split(".")[0], 'w') as fp:
+with open("json/" + str(args.values()).split("/")[-1].split(".")[0], 'w') as fp:
     json.dump(dict_data, fp)
